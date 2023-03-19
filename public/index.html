@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geometry Genius</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- main stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-blue-50">
     <!-- navbar start -->
-    <header class="container mx-auto">
+    <header class="max-w-7xl mx-auto mb-10">
       <div class="navbar bg-blue-200 px-6 rounded">
         <div class="navbar-start">
           <a class="capitalize">
@@ -23,19 +32,24 @@
         </div>
       </div>
     </header>
-    <!-- navbar end -->
+    <!-- navbar end  -->
 
-    <main>
-      <div class="container mx-auto">
-        <div class="grid md:grid-cols-4 gap-4">
-          <div class="card bg-base-100 shadow-xl">
+    <main class="">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- triangle 1-->
+          <div
+            class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
+          >
             <figure class="px-10 pt-10">
               <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Triangle</h2>
-              <div>Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span></div>
-              <div class="flex justify-center gap-2">
+              <div>
+                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+              </div>
+              <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
                   <label class="input-group input-group-xs">
                     <input type="text" placeholder="b" class="input input-bordered w-full" />
@@ -48,135 +62,8 @@
                     <span>cm</span>
                   </label>
                 </div>
-              </div>
-              <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
-              <div>Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span></div>
-              <div class="flex justify-center gap-2">
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-              </div>
-              <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
-              <div>Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span></div>
-              <div class="flex justify-center gap-2">
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-              </div>
-              <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
-              <div>Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span></div>
-              <div class="flex justify-center gap-2">
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-              </div>
-              <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
-              <div>Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span></div>
-              <div class="flex justify-center gap-2">
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-              </div>
-              <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
-              <div>Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span></div>
-              <div class="flex justify-center gap-2">
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
-                    <span>cm</span>
-                  </label>
+                <div class="flex items-center">
+                  <input type="checkbox" checked="checked" class="checked:bg-blue-500 checkbox-lg border-none" />
                 </div>
               </div>
               <div class="card-actions w-full">
@@ -185,13 +72,263 @@
             </div>
           </div>
 
-          <aside class="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laborum sit molestias, quibusdam cumque nisi nam dicta, at explicabo, ipsam
-            ad error nemo voluptatem alias. Tempore animi placeat, veniam nulla quos in, ipsa consectetur dolore voluptatem, voluptatibus iste id
-            nisi? Sunt laboriosam tempore distinctio quod libero et quibusdam consequuntur deleniti.
-          </aside>
+          <!-- rectangle 2-->
+          <div
+            class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-2 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <div>
+                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input type="checkbox" checked="checked" class="checked:bg-blue-500 checkbox-lg border-none" />
+                </div>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- parallelogram  3-->
+          <div
+            class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <div>
+                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input type="checkbox" checked="checked" class="checked:bg-blue-500 checkbox-lg border-none" />
+                </div>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- rhombus  4-->
+          <div
+            class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-4 sm:row-end-5 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <div>
+                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input type="checkbox" checked="checked" class="checked:bg-blue-500 checkbox-lg border-none" />
+                </div>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- pentagon 5-->
+          <div
+            class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-5 sm:row-end-6 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <div>
+                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input type="checkbox" checked="checked" class="checked:bg-blue-500 checkbox-lg border-none" />
+                </div>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- ellipse  6-->
+          <div
+            class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-6 sm:row-end-7 md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4 lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <div>
+                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+              </div>
+              <div class="flex justify-center items-center gap-2">
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="form-control">
+                  <label class="input-group input-group-xs">
+                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <span>cm</span>
+                  </label>
+                </div>
+                <div class="flex items-center">
+                  <input type="checkbox" checked="checked" class="checked:bg-blue-500 checkbox-lg border-none" />
+                </div>
+              </div>
+              <div class="card-actions w-full">
+                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- sidebar 7-->
+          <div
+            class="order-first sm:order-last px-8 sm:px-0 sm:col-start-2 sm:col-end-3 sm:row-start-1 sm:row-end-7 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-4 lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3"
+          >
+            <div class="mt-10">
+              <h2 class="text-2xl mb-4 text-center">Area Calculation</h2>
+              <ul class="list-decimal text-sm flex flex-col items-center">
+                <li class="mb-2">
+                  <span>Triangle</span>
+                  <span class="">12cm <sup>2</sup></span>
+                  <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
+                  <button class="btn btn-sm">&times;</button>
+                </li>
+                <li class="mb-2">
+                  <span>Triangle</span>
+                  <span class="">12cm <sup>2</sup></span>
+                  <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
+                  <button class="btn btn-sm">&times;</button>
+                </li>
+                <li class="mb-2">
+                  <span>Triangle</span>
+                  <span class="">12cm <sup>2</sup></span>
+                  <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
+                  <button class="btn btn-sm">&times;</button>
+                </li>
+                <li class="mb-2">
+                  <span>Triangle</span>
+                  <span class="">12cm <sup>2</sup></span>
+                  <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
+                  <button class="btn btn-sm">&times;</button>
+                </li>
+                <li class="mb-2">
+                  <span>Triangle</span>
+                  <span class="">12cm <sup>2</sup></span>
+                  <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
+                  <button class="btn btn-sm">&times;</button>
+                </li>
+                <li class="mb-2">
+                  <span>Triangle</span>
+                  <span class="">12cm <sup>2</sup></span>
+                  <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
+                  <button class="btn btn-sm">&times;</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 1 end -->
         </div>
       </div>
     </main>
+
+    <!--  
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="bg-red-900 sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
+          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 1</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
+        </div>
+        <div class="bg-red-200 sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-2 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2">
+          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 2</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
+        </div>
+        <div class="bg-red-300 sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2">
+          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 3</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
+        </div>
+        <div class="bg-red-400 sm:col-start-1 sm:col-end-2 sm:row-start-4 sm:row-end-5 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3">
+          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 4</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
+        </div>
+        <div class="bg-red-500 sm:col-start-1 sm:col-end-2 sm:row-start-5 sm:row-end-6 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
+          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 5</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
+        </div>
+        <div class="bg-red-600 sm:col-start-1 sm:col-end-2 sm:row-start-6 sm:row-end-7 md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4 lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3">
+          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 6</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
+        </div>
+        <div class="bg-red-700 sm:col-start-2 sm:col-end-3 sm:row-start-1 sm:row-end-7 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-4 lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3">
+          <h2 class="text-2xl">side bar 7</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
+        </div>
+        
+      </div>
+    </div>
+
+    -->
   </body>
 </html>
