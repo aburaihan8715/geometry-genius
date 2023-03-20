@@ -19,7 +19,18 @@ triangleBtn.addEventListener("click", function () {
     return alert("Please! input valid data.");
   }
 
-  // check each input value number
+  // check each input value negative number
+  if (triangleBaseInputValue && triangleHeightInputValue < 0) {
+    resetInputValue("triangle-base-input");
+    resetInputValue("triangle-height-input");
+    return alert("Input should not be negative.");
+  } else if (triangleBaseInputValue < 0 || triangleHeightInputValue < 0) {
+    resetInputValue("triangle-base-input");
+    resetInputValue("triangle-height-input");
+    return alert("Input should not be negative.");
+  }
+
+  // check each input value number and not negative number
   if (typeof triangleBaseInputValue && typeof triangleHeightInputValue === "number") {
     // updating triangle base and height input value
     setTextElementDataById("triangle-base-number", triangleBaseInputValue);
@@ -31,15 +42,14 @@ triangleBtn.addEventListener("click", function () {
 
     // update area calculation list area calculation headings
     const listBox = getTextElementById("list-box");
-    listBox.innerHTML = `
-  <li class="mb-2">
-    <span>Triangle</span>
-    <span class="">${triangleAreaDataTwoFloatingPoint}cm <sup>2</sup></span>
-    <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
-    <button class="btn btn-sm">&times;</button>
-  </li>
-  `;
-
+    const listItem = document.createElement("li");
+    listItem.classList.add("mb-2");
+    listItem.innerHTML = `<span>Triangle</span>
+      <span class="">${triangleAreaDataTwoFloatingPoint}cm <sup>2</sup></span>
+      <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
+      <button class="btn btn-sm">&times;</button>
+    `;
+    listBox.appendChild(listItem);
     // resetting triangle base and height input value
     resetInputValue("triangle-base-input");
     resetInputValue("triangle-height-input");
