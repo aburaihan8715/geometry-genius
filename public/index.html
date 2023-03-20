@@ -37,28 +37,29 @@
     <main class="">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <!-- triangle 1-->
+          <!-- triangle-->
           <div
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+              <img src="/public/assets/images/triangle.png" alt="triangle" class="h-36" />
             </figure>
-            <div class="card-body items-center text-center">
+            <div class="card-body justify-between items-center text-center">
               <h2 class="card-title">Triangle</h2>
+              <div>Area (A) = 0.5&times;b&times;h</div>
               <div>
-                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+                b = <span id="triangle-base-number">4</span>cm, h = <span id="triangle-height-number">6</span>cm <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <input id="triangle-base-input" type="text" placeholder="b" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <input id="triangle-height-input" type="text" placeholder="h" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
@@ -67,33 +68,34 @@
                 </div>
               </div>
               <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+                <button id="triangle-btn" class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
               </div>
             </div>
           </div>
 
-          <!-- rectangle 2-->
+          <!-- rectangle-->
           <div
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-2 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+              <img src="/public/assets/images/rectangle.png" alt="triangle" class="h-36" />
             </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+            <div class="card-body justify-between items-center text-center">
+              <h2 class="card-title">Rectangle</h2>
+              <div>Area (A) = w&times;l</div>
               <div>
-                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+                w = 4cm, l = 6cm <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <input type="text" placeholder="w" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <input type="text" placeholder="l" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
@@ -106,17 +108,18 @@
               </div>
             </div>
           </div>
-          <!-- parallelogram  3-->
+          <!-- parallelogram-->
           <div
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+              <img src="/public/assets/images/parallelogram.png" alt="triangle" class="h-36" />
             </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+            <div class="card-body justify-between items-center text-center">
+              <h2 class="card-title">Parallelogram</h2>
+              <div>Area (A) = b&times;h</div>
               <div>
-                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+                b = 4cm, h = 6cm <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
@@ -140,17 +143,18 @@
               </div>
             </div>
           </div>
-          <!-- rhombus  4-->
+          <!-- rhombus-->
           <div
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-4 sm:row-end-5 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+              <img src="/public/assets/images/rhombus.png" alt="triangle" class="h-36" />
             </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+            <div class="card-body justify-between items-center text-center">
+              <h2 class="card-title">Rhombus</h2>
+              <div>Area (A) = 0.5&times;d<sub>1</sub>&times;d<sub>2</sub></div>
               <div>
-                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+                d<sub>1</sub> = 4cm, d<sub>2</sub> = 6cm <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
@@ -174,17 +178,18 @@
               </div>
             </div>
           </div>
-          <!-- pentagon 5-->
+          <!-- pentagon -->
           <div
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-5 sm:row-end-6 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+              <img src="/public/assets/images/pentagon.png" alt="triangle" class="h-36" />
             </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+            <div class="card-body justify-between items-center text-center">
+              <h2 class="card-title">Pentagon</h2>
+              <div>Area (A) = 0.5&times;p&times;b</div>
               <div>
-                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+                p = 4cm, b = 6cm <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
@@ -208,17 +213,18 @@
               </div>
             </div>
           </div>
-          <!-- ellipse  6-->
+          <!-- ellipse -->
           <div
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-6 sm:row-end-7 md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4 lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="rounded-xl" />
+              <img src="/public/assets/images/ellipse.png" alt="triangle" class="h-36" />
             </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+            <div class="card-body justify-between items-center text-center">
+              <h2 class="card-title">Ellipse</h2>
+              <div>Area (A) = &pi;ab</div>
               <div>
-                Area (A) = <span>0.5 </span>&times <span>b</span> &times<span> h</span> <span><i class="fa-regular fa-pen-to-square"></i></span>
+                a = 4cm, b = 6cm <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
@@ -243,7 +249,7 @@
             </div>
           </div>
 
-          <!-- sidebar 7-->
+          <!-- sidebar -->
           <div
             class="order-first sm:order-last px-8 sm:px-0 sm:col-start-2 sm:col-end-3 sm:row-start-1 sm:row-end-7 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-4 lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3"
           >
@@ -289,46 +295,36 @@
               </ul>
             </div>
           </div>
-          <!-- card 1 end -->
         </div>
       </div>
     </main>
-
-    <!--  
-    <div class="container mx-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <div class="bg-red-900 sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
-          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 1</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
-        </div>
-        <div class="bg-red-200 sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-2 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2">
-          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 2</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
-        </div>
-        <div class="bg-red-300 sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2">
-          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 3</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
-        </div>
-        <div class="bg-red-400 sm:col-start-1 sm:col-end-2 sm:row-start-4 sm:row-end-5 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3">
-          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 4</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
-        </div>
-        <div class="bg-red-500 sm:col-start-1 sm:col-end-2 sm:row-start-5 sm:row-end-6 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
-          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 5</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
-        </div>
-        <div class="bg-red-600 sm:col-start-1 sm:col-end-2 sm:row-start-6 sm:row-end-7 md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4 lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3">
-          <h2 class="text-2xl">Lorem ipsum dolor sit amet consectetur. 6</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
-        </div>
-        <div class="bg-red-700 sm:col-start-2 sm:col-end-3 sm:row-start-1 sm:row-end-7 md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-4 lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-3">
-          <h2 class="text-2xl">side bar 7</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique voluptatem quidem modi, est quas distinctio quibusdam cum sapiente molestias? Sequi, commodi ipsam. Mollitia obcaecati animi, cum distinctio, voluptatum id officiis qui nobis reiciendis dolorem nihil omnis aliquid autem adipisci voluptas!</p>
-        </div>
-        
-      </div>
-    </div>
-
-    -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="js/utilities.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
+
+
+<!-- ============end============= -->
