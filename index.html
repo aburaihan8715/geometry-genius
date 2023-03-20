@@ -115,7 +115,7 @@
           </div>
           <!-- parallelogram-->
           <div
-          id="parallelogram-card"
+            id="parallelogram-card"
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2"
           >
             <figure class="px-10 pt-10">
@@ -125,7 +125,8 @@
               <h2 class="card-title">Parallelogram</h2>
               <div>Area (A) = b&times;h</div>
               <div>
-                b = <span id="parallelogram-base-number">4</span>cm, h = <span id="parallelogram-height-number">6</span>cm <button><i class="fa-regular fa-pen-to-square"></i></button>
+                b = <span id="parallelogram-base-number">4</span>cm, h = <span id="parallelogram-height-number">6</span>cm
+                <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
@@ -151,6 +152,7 @@
           </div>
           <!-- rhombus-->
           <div
+            id="rhombus-card"
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-4 sm:row-end-5 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
@@ -160,18 +162,19 @@
               <h2 class="card-title">Rhombus</h2>
               <div>Area (A) = 0.5&times;d<sub>1</sub>&times;d<sub>2</sub></div>
               <div>
-                d<sub>1</sub> = 4cm, d<sub>2</sub> = 6cm <button><i class="fa-regular fa-pen-to-square"></i></button>
+                d<sub>1</sub> = <span id="rhombus-d1-number">4</span>cm, d<sub>2</sub> = <span id="rhombus-d2-number">6</span>cm
+                <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <input id="rhombus-d1-input" type="text" placeholder="d1" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <input id="rhombus-d2-input" type="text" placeholder="d2" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
@@ -180,12 +183,13 @@
                 </div>
               </div>
               <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+                <button id="rhombus-btn" class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
               </div>
             </div>
           </div>
           <!-- pentagon -->
           <div
+          id="pentagon-card"
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-5 sm:row-end-6 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
@@ -195,18 +199,18 @@
               <h2 class="card-title">Pentagon</h2>
               <div>Area (A) = 0.5&times;p&times;b</div>
               <div>
-                p = 4cm, b = 6cm <button><i class="fa-regular fa-pen-to-square"></i></button>
+                p = <span id="pentagon-p-number">4</span>cm, b = <span id="pentagon-b-number">6</span>cm <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <input id="pentagon-p-input" type="text" placeholder="p" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <input id="pentagon-b-input" type="text" placeholder="b" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
@@ -215,12 +219,13 @@
                 </div>
               </div>
               <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+                <button id="pentagon-btn" class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
               </div>
             </div>
           </div>
           <!-- ellipse -->
           <div
+          id="ellipse-card"
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-6 sm:row-end-7 md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4 lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
@@ -230,18 +235,18 @@
               <h2 class="card-title">Ellipse</h2>
               <div>Area (A) = &pi;ab</div>
               <div>
-                a = 4cm, b = 6cm <button><i class="fa-regular fa-pen-to-square"></i></button>
+                a = <span id="ellipse-a-number">4</span>cm, b = <span id="ellipse-b-number">6</span>cm <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="b" class="input input-bordered w-full" />
+                    <input id="ellipse-a-input" type="text" placeholder="a" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
                 <div class="form-control">
                   <label class="input-group input-group-xs">
-                    <input type="text" placeholder="h" class="input input-bordered w-full" />
+                    <input id="ellipse-b-input"  type="text" placeholder="b" class="input input-bordered w-full" />
                     <span>cm</span>
                   </label>
                 </div>
@@ -250,7 +255,7 @@
                 </div>
               </div>
               <div class="card-actions w-full">
-                <button class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
+                <button id="ellipse-btn" class="btn bg-blue-500 hover:bg-blue-700 border-none w-full">Calculate</button>
               </div>
             </div>
           </div>

@@ -45,7 +45,7 @@ parallelogramBtn.addEventListener("click", function () {
     const listItem = document.createElement("li");
     listItem.classList.add("mb-2");
     listItem.innerHTML = `
-        <span>Rectangle</span>
+        <span>Parallelogram</span>
         <span class="">${parallelogramAreaDataTwoFloatingPoint} <sup>2</sup></span>
         <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
         <button class="btn btn-sm">&times;</button>
