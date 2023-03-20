@@ -25,10 +25,39 @@ const setTextElementDataById = (elementId, content) => {
 };
 
 // reset input value
-const resetInputValue=(inputId)=>{
-  const inputElement=document.getElementById(inputId);
-  return inputElement.value="";
+const resetInputValue = (inputId) => {
+  const inputElement = document.getElementById(inputId);
+  return (inputElement.value = "");
+};
 
-}
+// actions for blogs button
+const blogsBtn = getTextElementById("blogs-btn");
+blogsBtn.addEventListener("click", function () {
+  location.href = "blogs.html";
+});
 
+// actions for generating random six digit data
+const randomNumberGenerator = () => {
+  const randomNumber = Math.round(Math.random() * 1000000);
+  return randomNumber;
+};
+const getSixDigitRandomNumber = () => {
+  const randomNumber = randomNumberGenerator();
+  const randomNumberString = randomNumber + "";
+
+  if (randomNumberString.length === 6) {
+    return randomNumber;
+  } else {
+    return randomNumberGenerator();
+  }
+};
+
+// function for changing background by id
+const changeElementBackGroundById = (elementId) => {
+  const element = document.getElementById(elementId);
+  element.addEventListener("mouseover", function () {
+    const sixDigitNumber = getSixDigitRandomNumber();
+    element.style.backgroundColor = `#${sixDigitNumber}`;
+  });
+};
 // ==============end================

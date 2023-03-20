@@ -29,7 +29,7 @@
         </div>
 
         <div class="navbar-end">
-          <a class="btn bg-blue-500 hover:bg-blue-700 border-none">blog</a>
+          <a id="blogs-btn" class="btn bg-blue-500 hover:bg-blue-700 border-none">blog</a>
         </div>
       </div>
     </header>
@@ -40,6 +40,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <!-- triangle-->
           <div
+            id="triangle-card"
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
           >
             <figure class="px-10 pt-10">
@@ -257,8 +258,14 @@
           >
             <div class="mt-10">
               <h2 class="text-2xl mb-4 text-center">Area Calculation</h2>
-              <ul class="list-decimal text-sm flex flex-col items-center">
-                <li class="mb-2">
+              <ul id="list-box" class="list-decimal text-sm flex flex-col items-center">
+                <!-- <li class="mb-2">
+                  <span>Triangle</span>
+                  <span class="">12cm <sup>2</sup></span>
+                  <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
+                  <button class="btn btn-sm">&times;</button>
+                </li> -->
+                <!-- <li class="mb-2">
                   <span>Triangle</span>
                   <span class="">12cm <sup>2</sup></span>
                   <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
@@ -287,13 +294,7 @@
                   <span class="">12cm <sup>2</sup></span>
                   <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
                   <button class="btn btn-sm">&times;</button>
-                </li>
-                <li class="mb-2">
-                  <span>Triangle</span>
-                  <span class="">12cm <sup>2</sup></span>
-                  <button class="btn btn-sm bg-blue-500 hover:bg-blue-700 border-none lowercase font-normal">convert m<sup>2</sup></button>
-                  <button class="btn btn-sm">&times;</button>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
