@@ -13,8 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- main stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-blue-50">
     <!-- navbar start -->
@@ -42,13 +43,14 @@
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/triangle.png" alt="triangle" class="h-36" />
+              <img src="assets/images/triangle.png" alt="triangle" class="h-36" />
             </figure>
             <div class="card-body justify-between items-center text-center">
               <h2 class="card-title">Triangle</h2>
               <div>Area (A) = 0.5&times;b&times;h</div>
               <div>
-                b = <span id="triangle-base-number">4</span>cm, h = <span id="triangle-height-number">6</span>cm <button><i class="fa-regular fa-pen-to-square"></i></button>
+                b = <span id="triangle-base-number">4</span>cm, h = <span id="triangle-height-number">6</span>cm
+                <button><i class="fa-regular fa-pen-to-square"></i></button>
               </div>
               <div class="flex justify-center items-center gap-2">
                 <div class="form-control">
@@ -78,7 +80,7 @@
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-2 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/rectangle.png" alt="triangle" class="h-36" />
+              <img src="assets/images/rectangle.png" alt="triangle" class="h-36" />
             </figure>
             <div class="card-body justify-between items-center text-center">
               <h2 class="card-title">Rectangle</h2>
@@ -113,7 +115,7 @@
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/parallelogram.png" alt="triangle" class="h-36" />
+              <img src="assets/images/parallelogram.png" alt="triangle" class="h-36" />
             </figure>
             <div class="card-body justify-between items-center text-center">
               <h2 class="card-title">Parallelogram</h2>
@@ -148,7 +150,7 @@
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-4 sm:row-end-5 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/rhombus.png" alt="triangle" class="h-36" />
+              <img src="assets/images/rhombus.png" alt="triangle" class="h-36" />
             </figure>
             <div class="card-body justify-between items-center text-center">
               <h2 class="card-title">Rhombus</h2>
@@ -183,7 +185,7 @@
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-5 sm:row-end-6 md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/pentagon.png" alt="triangle" class="h-36" />
+              <img src="assets/images/pentagon.png" alt="triangle" class="h-36" />
             </figure>
             <div class="card-body justify-between items-center text-center">
               <h2 class="card-title">Pentagon</h2>
@@ -218,7 +220,7 @@
             class="card bg-base-100 shadow-xl sm:col-start-1 sm:col-end-2 sm:row-start-6 sm:row-end-7 md:col-start-2 md:col-end-3 md:row-start-3 md:row-end-4 lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3"
           >
             <figure class="px-10 pt-10">
-              <img src="/public/assets/images/ellipse.png" alt="triangle" class="h-36" />
+              <img src="assets/images/ellipse.png" alt="triangle" class="h-36" />
             </figure>
             <div class="card-body justify-between items-center text-center">
               <h2 class="card-title">Ellipse</h2>
@@ -325,6 +327,5 @@
     <script src="js/app.js"></script>
   </body>
 </html>
-
 
 <!-- ============end============= -->
